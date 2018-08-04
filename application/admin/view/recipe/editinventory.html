@@ -1,0 +1,47 @@
+<link href="__CSS__/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+<link href="__CSS__/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+<link href="__CSS__/animate.min.css" rel="stylesheet">
+<link href="__CSS__/style.min.css?v=4.1.0" rel="stylesheet">
+<link rel="stylesheet" href="__layui__/css/layui.css" media="all">
+<script src="__layui__/layui.js"></script>
+<style type="text/css">
+    .float_css{
+        float: right;
+        margin-left: 5px;
+    }
+</style>
+<form action="" id="add_informSms" method="post" data-ac="888">
+    <input type="hidden" name="id" value="{$data.id}">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="ibox-title">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">元素名称：</label>
+                        <div class="input-group col-sm-9 float_css">
+                            <input type="text"  id="element_name"
+                                   class="form-control" style="width:250px;" name="element_name" value="{$data.element_name}">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">库存数量：</label>
+                        <div class="input-group col-sm-9 float_css">
+                            <input type="number"  id="inventory_num"
+                                   class="form-control" style="width:150px;" name="inventory_num" value="{$data.inventory_num}">
+                                <span style="float:right;margin-top: -30px;margin-left: 160px;">
+                                <span >选择单位：</span>
+                                <select name="unit_id" id="unit_id" class="form-control" style="margin-left:60px;margin-top:-25px">
+                                    <option value="">选择单位</option>
+                                    {foreach $unitList as $c}
+                                    <option {$data['element_unit'] == $c['id'] ? 'selected':''} value="{$c.id}">{$c.unit_name}</option>
+                                    {/foreach}
+                                </select>
+                                    </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

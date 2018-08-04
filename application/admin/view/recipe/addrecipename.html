@@ -1,0 +1,70 @@
+<link href="__CSS__/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+<link href="__CSS__/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+<link href="__CSS__/animate.min.css" rel="stylesheet">
+<link href="__CSS__/style.min.css?v=4.1.0" rel="stylesheet">
+<link rel="stylesheet" href="__layui__/css/layui.css" media="all">
+<script src="__layui__/layui.js"></script>
+<style type="text/css">
+    .float_css{
+        float: right;
+        margin-left: 5px;
+    }
+</style>
+<form action="" id="add_informSms" method="post" data-ac="888">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="ibox-title">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">选择课程：</label>
+                        <div class="input-group col-sm-9 float_css">
+                            <select name="courser_id" id="courser_id" class="form-control" >
+                                <option value="">请选择</option>
+                                {foreach $course as $c}
+                                <option value="{$c.id}">{$c.courser_name}</option>
+                                {/foreach}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">食谱名称类型：</label>
+                        <div class="input-group col-sm-9 float_css">
+                            <select name="pid" id="pid" class="form-control" >
+                                <option value="0">顶级名称</option>
+                                {foreach $recipe as $c}
+                                <option value="{$c.id}" data-{$c.id}="{$c.courser_id}" class="option_{$c.id}">{$c.recipe_name}</option>
+                                    {foreach $c['son'] as $s}
+                                    <option value="{$s.id}" disabled style="background: #cccccc">&nbsp;&nbsp;&nbsp;{$s.recipe_name}</option>
+                                    {/foreach}
+                                {/foreach}
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">添加食谱名称：</label>
+                        <div class="input-group col-sm-9 float_css">
+                            <input type="text"  id="recipe_name"
+                                   class="form-control" style="width:150px;" name="recipe_name" value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<script src="__JS__/jquery.min.js?v=2.1.4"></script>
+<script type="text/javascript">
+    $('#pid').on('change',function(){
+        var var_id = $(this).val();
+        var cid =$(".option_"+var_id).data(var_id);
+        var courser_id = $("#courser_id").val();
+        if(cid){
+            if(cid != courser_id){
+              $("#courser_id").find("option[value = '"+cid+"']").prop('selected',true);
+            }
+        }else{
+            $("#courser_id").find("option[value = '']").prop('selected',true);
+        }
+    })
+</script>

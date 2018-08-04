@@ -1,0 +1,187 @@
+/* pages/buycourse/buycourse.wxss */
+/*课程选择 支付方式   */
+.check_course_box{
+  font-family: '微软雅黑';
+  background: rgb(235, 235, 235);
+}
+.section{
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100rpx;
+  line-height: 100rpx;
+  width: 100%;
+  border-bottom: 3rpx solid #999999;
+}
+.section .checked_course{
+  margin-left: 20rpx;
+  color: #AAAAAA;
+}
+.section .buy_type1 .checked_section{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+}
+.section  .checked_section .checked_title{
+  color: #999999;
+}
+.pay_type{
+margin-right: 65rpx;
+}
+
+
+ .checked_section  image{
+   width: 50rpx;
+   height: 50rpx;
+   margin-top: 30rpx;
+   margin-left: 20rpx;
+ }
+
+ /*短信验证  */
+ .sms_check{
+    background: #fff; 
+   height: 330rpx;
+   width: 600rpx;
+   margin: auto;
+   /* margin-top: 150rpx; */
+   margin-top: 50rpx;
+     border: 1rpx solid #999999;  
+     border-radius: 20rpx;
+ }
+.real_name{
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 2rpx;
+  border-bottom: 1rpx solid #999999;
+}
+.real_name input{
+  margin: 50rpx 0rpx;
+  padding-left: 5rpx;
+  margin-left:10rpx;
+}
+/* .center{
+    text-align: center;
+} */
+
+.phone{
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 2rpx;
+  border-bottom: 1rpx solid #999999;
+  display: flex;
+  flex-direction: row;
+}
+.phone input{
+   height: 100%;
+   margin-left:10rpx;
+}
+.phone .btn_yzm{
+  width: 40%;
+  margin-right: 0rpx;
+  font-size: 30rpx;
+  line-height: 100rpx;
+  /* border: 1rpx solid #999999; */
+}
+.but_before{
+   background:rgb(235, 235, 235); 
+}
+.but_after{
+  background: #B79A6E;
+  }
+.code{
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 2rpx;
+}
+.code input{
+margin-left:10rpx;
+ height: 100%;
+}
+
+/*必看须知  */
+/* .notice image{
+  width:80%;
+   height:209px; 
+  display:inline-block;
+  overflow:hidden;
+  margin-left:65rpx;
+  margin-top:80rpx;
+  margin-bottom:-60rpx;
+ border: 2rpx solid red; 
+}*/
+.notice{
+   width:80%;
+  display: flex;
+  flex-direction: row;
+  margin:auto;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  padding-left: 0rpx;
+  /* border: 1rpx solid red; */
+}
+.checked_agreement{
+  color: blue;
+  font-size: 45rpx;
+  margin-left: 15rpx;
+}
+/*入学须知  */
+.notice_img{
+  text-align: center;
+}
+
+
+/*咨询 加 支付  */
+.customer_buy{
+    width: 100%;
+  display: flex;
+  flex-direction: row;
+  position:fixed;
+  bottom:0; 
+    background:#FFFFFF;  
+}
+button::after{
+  border: none;
+}
+.customer_buy  .but_question_1{
+  height: 100rpx;
+   width: 100%;
+  line-height: 100rpx;
+  border-right: none;
+  background: #fff;
+  color: #B79A6E;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  font-size: 45rpx;
+  margin-right: 0rpx;
+   margin-left: 0rpx;
+     background:#FFFFFF; 
+   border-radius: 0rpx; 
+}
+.customer_buy  .but_question_1 image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.customer_buy  .but_question_1 view{
+  margin-left: 15rpx;
+}
+.customer_buy  .but_question_buy{
+   width: 100%;
+  height: 100rpx;
+   line-height: 100rpx;
+  border-left: none;
+    /* background:rgb(192, 192, 192);  */
+   border-radius: 0rpx; 
+   color: rgb(250, 250, 250);
+  font-size: 45rpx;
+  margin-left: 0rpx;
+  /* border: 1rpx solid red; */
+}
+.form_status_css{
+ background:rgb(192, 192, 192);
+}
+.form_status_css_ok{
+  background: #B79A6E;  
+  border: 1rpx solid #B79A6E;
+}

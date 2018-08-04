@@ -1,0 +1,50 @@
+<view class='page'>
+  <!--轮播  -->
+  <swiper class='l_b' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="unique">
+      <swiper-item>
+        <image lazy-load="true" src="{{url}}{{item.img_url}}" class="slide-image" height='150' alt="{{item.title}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="menu_box_1">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav" style='width:5rpx;' style="">甜点课程</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">面包课程</view>
+  </view>
+  <image class="{{currentTab==0 ? 'img_on' : 'none'}}" src='../../images/buttom.png'></image>
+  <image class="{{currentTab==1 ? 'img_on1' : 'none'}}" src='../../images/buttom.png'></image>
+  <view class="swiper-tab-temp"></view>
+  <view >
+    <swiper  style="{{currentTab==1 ? 'height:300px;':''}}" current="{{currentTab}}" class="swiper-box " duration="300"  bindchange="bindChange">
+      <!--甜点课程  -->
+      <swiper-item  >
+        <navigator wx:for="{{dessert}}" wx:key="unique" wx:for-index="index" wx:for-item="item" url="/pages/courseDetail/courseDetail?course_id={{item.id}}&title={{item.courser_name}}" hover-class="navigator-hover" class="nav_i">
+          <view class="coures_list">
+            <image lazy-load="true" mode="scaleToFill" class="photo" src="{{url}}{{item.index_img}}">
+            </image>
+             <view class='top_1'>
+              <view class="course_title">{{item.courser_name}}</view>
+              <view class="courser_price">￥{{item.courser_price}}</view>
+              <view class="course_buy">{{item.buy_number}}人报名</view>
+            </view>
+          </view>
+        </navigator>
+      </swiper-item>
+      <!--面包课程  -->
+      <swiper-item style="heght:0%;">
+        <navigator wx:for="{{bread}}" wx:for-index="index" wx:key="unique" wx:for-item="item" url="/pages/courseDetail/courseDetail?course_id={{item.id}}&title={{item.courser_name}}" hover-class="navigator-hover" class="nav_i">
+          <view class="coures_list">
+            <image mode="scaleToFill" class="photo" src="{{url}}{{item.index_img}}">
+            </image>
+             <view class='top_1'>
+            <view class="course_title">{{item.courser_name}}</view>
+            <view class="courser_price">￥{{item.courser_price}}</view>
+            <view class="course_buy">{{item.buy_number}}人报名</view>
+            </view>
+          </view>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+    <view class="{{isIpx && currentTab==1 ? 'no_more_2_x':'no_more'}} {{currentTab==1 ? 'no_more_2' : 'no_more'}} "> 更多课程敬请期待 </view>  
+</view>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>添加食谱</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="__CSS__/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="__CSS__/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="__CSS__/animate.min.css" rel="stylesheet">
+    <link href="__CSS__/style.min.css?v=4.1.0" rel="stylesheet">
+    <style type="text/css">
+        .checked_on{
+            background:#1ab394;
+           color: #ffffff;
+        }
+    </style>
+</head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>添加食谱</h5>
+                </div>
+                <div class="ibox-content">
+                    <form class="form-horizontal m-t" id="commentForm" method="post" action="#">
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">食谱名称：</label>
+                            <div class="input-group col-sm-4">
+                                <button class="btn btn-outline btn-primary addtimecourse" type="button">添加食谱名称</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">选择课程：</label>
+                            <div class="input-group col-sm-9 float_css" style="margin-bottom: 10px">
+                                <select name="courser_id" id="courser_id" class="form-control" >
+                                    <option value="">请选择</option>
+                                    {foreach $course as $c}
+                                    <option value="{$c.id}">{$c.courser_name}</option>
+                                    {/foreach}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group create_courser_name" >
+                        </div>
+                        <div class="form-group show_table_element">
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 col-sm-offset-6">
+                                <input type="button" value="返回" class="btn btn-danger"onclick="javascript :history.back(-1);"/>
+                                <button class="btn btn-primary but_ok" type="button">提交</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="__JS__/jquery.min.js?v=2.1.4"></script>
+<script src="__JS__/bootstrap.min.js?v=3.3.6"></script>
+<script src="__JS__/content.min.js?v=1.0.0"></script>
+<script src="__JS__/plugins/validate/jquery.validate.min.js"></script>
+<script src="__JS__/plugins/validate/messages_zh.min.js"></script>
+<script src="__JS__/plugins/layer/layer.min.js"></script>
+<script src="__JS__/jquery.form.js"></script>
+
+<script type="text/javascript">
+
+    var index = '';
+    function showStart(){
+        index = layer.load(0, {shade: false});
+        return true;
+    }
+
+    function showSuccess(res){
+        layer.ready(function(){
+            layer.close(index);
+            if(1 == res.status){
+                layer.msg('添加成功',{title: '友情提示', icon: 1, closeBtn: 0},function(){
+                    window.location.href = res.msg;
+                });
+            }else{
+                layer.msg(res.msg, {icon: 5});
+            }
+        });
+    }
+
+    $(document).ready(function(){
+        // 添加角色
+        var options = {
+            beforeSubmit:showStart,
+            success:showSuccess
+        };
+
+        $('#commentForm').submit(function(){
+            $(this).ajaxSubmit(options);
+            return false;
+        });
+    });
+
+    // 表单验证
+    $.validator.setDefaults({
+        highlight: function(e) {
+            $(e).closest(".form-group").removeClass("has-success").addClass("has-error")
+        },
+        success: function(e) {
+            e.closest(".form-group").removeClass("has-error").addClass("has-success")
+        },
+        errorElement: "span",
+        errorPlacement: function(e, r) {
+            e.appendTo(r.is(":radio") || r.is(":checkbox") ? r.parent().parent().parent() : r.parent())
+        },
+        errorClass: "help-block m-b-none",
+        validClass: "help-block m-b-none"
+    });
+</script>
+
+<script type="text/javascript">
+    $('.but_ok').hide();
+    //  课程  添加食谱名称
+    $('.addtimecourse').on('click',function(){
+        layer.config({
+            skin: 'demo-class'
+        });
+        layer.open({
+            type: 2,
+            title: ['添加食谱名称', 'color: #900000;font-size:18px;'],
+            area:  ['800px','300px'],
+            btn:['确认', '取消'],
+            content: ["{:url('recipe/addrecipename')}", 'no'], //这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
+            yes: function(index, layero){
+                var form_top = $(window.frames["layui-layer-iframe"+index].document).find("#add_informSms"),
+                        recipe_name = form_top.find("#recipe_name");
+                        courser_id = form_top.find("#courser_id");
+                if(!courser_id.val()){
+                    layer.msg('选择课程',{icon:5});
+                    courser_id.focus();
+                    return false;
+                }
+                if(!recipe_name.val()){
+                    layer.msg('填写名称',{icon:5});
+                    recipe_name.focus();
+                    return false;
+                }
+                //按钮【按钮一】的回调
+                $.post("{:url('recipe/addrecipename')}",$(window.frames["layui-layer-iframe"+index].document).find("#add_informSms").serialize(),function(data){
+                    if(data.status == 1){
+                        layer.msg('新增成功',{icon:1},function(){
+                            layer.close(index);
+                            location.reload(true);
+                        });
+                    }else{
+                        layer.msg(data.msg,{icon:5});
+                    }
+                })
+            },
+            btn2: function(index, layero){
+                //按钮【按钮二】的回调
+                layer.close(index);
+                //return false 开启该代码可禁止点击该按钮关闭
+            }
+        });
+    });
+//   选择课程 选择食谱名称
+    $("#courser_id").on('change',function(){
+        var courser_id = parseInt($(this).val());
+        $(".create_courser_name").html('');
+        if(courser_id){
+            $.post("{:url('upload/getrecipeName')}",{cid:courser_id},function(data){
+                if(data.status == 1){
+                    var dataobj = data.data;
+                    if(dataobj.length > 0){
+                        for(var $i= 0; $i < dataobj.length; $i++){
+                            $(".create_courser_name").append(creatNameHtml(dataobj[$i]));
+                        }
+                    }else{
+                        layer.msg('该课程还没相关的食谱名称，请先进行添加');
+                    }
+                }else{
+                    layer.msg(data.msg,{icon:5});
+                }
+            })
+        }
+    })
+//    组建 食谱名称html
+    function creatNameHtml(data){
+        var html ='';
+        html +='<div class="form-group cl_'+data.courser_id+'" >';
+        html +='<label class="col-sm-3 control-label">选择食谱名称：</label>';
+        html +='<div class="input-group col-sm-4">';
+        if(data.son.length > 0){
+            html +='<span data-id="'+data.id+'" class="btn btn-outline btn-danger" data-cid="'+data.courser_id+'">'+data.recipe_name+'</span>';
+        }else if(data.is_exist_recipe){
+            html +='<span data-id="'+data.id+'" class="btn btn-outline btn-danger " data-cid="'+data.courser_id+'">'+data.recipe_name+'</span>';
+        }else{
+            html +='<span data-id="'+data.id+'" class="btn btn-outline btn-primary  addElement" data-cid="'+data.courser_id+'">'+data.recipe_name+'</span>';
+        }
+        html +='</div>';
+        if(data.son.length > 0){
+            html += createSon(data.son);
+        }
+        html +='</div>';
+        return html;
+    }
+//    组建 食谱名称 son html
+    function createSon(son){
+        var html = '';
+        html +='<div class="form-group" style="text-align: center">';
+        for(var $j= 0; $j < son.length; $j++){
+
+            if(son[$j].is_exist_recipe){
+                html +='<span data-cid="'+son[$j].courser_id+'" class="btn btn-outline btn-danger" data-id="'+son[$j].id+'">'+son[$j].recipe_name+'</span>';
+            }else{
+                html +='<span data-cid="'+son[$j].courser_id+'" class="btn btn-outline btn-primary addElement" data-id="'+son[$j].id+'">'+son[$j].recipe_name+'</span>';
+            }
+        }
+        html += '</div>';
+        return html;
+    }
+
+    /**
+     * 创建 元素内容
+     */
+    $(document).on('click',".addElement",function(){
+      var id = $(this).data('id'),
+              cid = $(this).data('cid');
+        var $this = $(this);
+        var url = '/admin/recipe/addrecipedetail?id='+id+'&cid='+cid;
+        $this.removeClass('addElement').removeClass('btn-primary').addClass('btn-danger');
+        layer.config({
+            skin: 'demo-class'
+        });
+        layer.open({
+            type: 2,
+            title: ['添加食谱名称', 'color: #900000;font-size:18px;'],
+            area:  ['1020px','800px'],
+            btn:['确认', '取消'],
+            content: [url], //这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
+            yes: function(index, layero){
+                var form_top = $(window.frames["layui-layer-iframe"+index].document).find("#add_informSms");
+                //按钮【按钮一】的回调
+                $.post("{:url('recipe/addrecipedetail')}",$(window.frames["layui-layer-iframe"+index].document).find("#add_informSms").serialize(),function(data){
+                    if(data.status == 1){
+                        $('.show_table_element').append(createGetAmount(data.data));
+                        $('.but_ok').show();
+//                        layer.msg('新增成功',{icon:1});
+                        layer.close(index);
+                    }else{
+                        layer.msg(data.msg,{icon:5});
+                    }
+                })
+            },
+            btn2: function(index, layero){
+                //按钮【按钮二】的回调
+                layer.close(index);
+                //return false 开启该代码可禁止点击该按钮关闭
+            }
+        });
+    })
+    /**
+     * 配方创建成功后进行预览操作
+     * @param obj
+     * @returns {string}
+     */
+    function createGetAmount(obj){
+        var html = '';
+            html +='<table class="table table-condensed" style="border: 1px solid;">';
+            html +='<caption style="text-align: center;border: 1px solid;font-size: 25px;color: #665959;">'+obj.recipeName+' </caption>';
+            html +='<thead> <tr> <th>配方元素</th> <th>学员用量</th> <th>老师用量</th> <th>回收资源</th> </tr> </thead>';
+            html +='<tbody>';
+            for(var i=0; i< obj.detailElement.length;i++){
+                html +='<tr> <td>'+obj.detailElement[i].element_name+'</td> <td>'+obj.detailElement[i].students_use+obj.detailElement[i].element_unit_name+'</td> <td>'+obj.detailElement[i].teachers_use+obj.detailElement[i].element_unit_name+'</td> <td>'+obj.detailElement[i].is_back_num+obj.detailElement[i].element_unit_name+'</td> </tr>';
+            }
+            html +='</tbody>';
+            html +='</table>';
+        return html;
+    }
+
+    /**
+     * 点击跳转 添加成功
+     */
+    $('.but_ok').on('click',function(){
+        layer.msg('添加食谱成功',{icon:1,time:1000},function(){
+            location.replace("{:url('recipe/recipeindex')}");
+        });
+    })
+
+</script>
+</body>
+</html>

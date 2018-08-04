@@ -1,0 +1,13 @@
+<!--pages/question/askquestion.wxml-->
+ <form bindsubmit="formSubmit_ask">
+ <view class='askquestion_box'>
+    <view class="describe">
+    <textarea   name="questions" value='' placeholder="  请描述您的问题"  placeholder-class="place-holder" maxlength="140"  bindinput="change_value"/>
+    </view> 
+  <view class="sub_ok">
+    <button formType="submit">提问</button>
+  </view>
+  <view style='margin-top:180%;'></view>
+  </view>
+</form>
+

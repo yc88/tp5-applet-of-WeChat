@@ -1,0 +1,37 @@
+<!--pages/listDetail/mycourse.wxml-->
+<view class='my_course_box'>
+<!--{{goToCourse == 1 ? true: false}}  -->
+   <view class='course_list' wx:for="{{orderList}}" wx:for-index="idx" wx:key="unique" hidden='{{goToCourse == 1 ? true: false}}'>
+    <view class='v_1'>
+      <text class="v_1_1">课程名称：</text>
+      <text class='v_1_2'>{{item.course_name}}</text>
+    </view>
+    <view class='v_2'>
+      <text class='v_2_1'>付款时间：</text>
+      <text class='v_2_2'>{{item.oktime}}</text>
+    </view>
+    <view class='v_2'>
+      <text class='v_2_1'>订单编号：</text>
+      <text class='v_2_2'>{{item.order_no}}</text>
+    </view>
+    <view class='v_2'>
+      <text class='v_2_1' >支付类型：</text>
+      <text class='v_2_2' hidden="{{item.payment_type != 1}}">全额支付 </text>
+      <text class='v_2_2' hidden="{{item.payment_type != 2}}"> 定金支付 </text>
+    </view>
+    <view class='footer_view'>
+      <view class='v_3'>
+        <text class='v_3_1'>支付金额：</text>
+        <text class='v_3_2'>{{item.price}}</text>
+      </view>
+       <view class='residue_money' hidden="{{item.payment_type!=2}}">
+            <text class='pay_residual_money'>请尽到学校支付尾款</text>
+        <!-- <button data-order="{{item.order_no}}" data-money="{{item.money_residue}}" bindtap='buy_residue'>支付余款￥{{item.money_residue}}</button> -->
+      </view> 
+    </view>
+  </view> 
+  <!--  -->
+   <view class='no_course' bindtap='goToCourse' hidden='{{goToCourse == 1 ? false: true}}'>
+  <image mode="widthFix" class='no_course_img' src='https://wx.florevp.com/no_course1.png'></image>
+  </view> 
+</view>

@@ -1,0 +1,75 @@
+<!--pages/question/question.wxml-->
+<view class="question_box">
+<!--提问悬浮按钮 bindtap="ask_question"  -->
+    <navigator url='./askquestion'>
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='but_question_but' style="background:url('https://wx.florevp.com/50.png')"></button>
+    </navigator>
+  <!--关于我的提问  -->
+
+
+<block wx:if="{{myquestio != ''}}">
+  <navigator url="/pages/listDetail/myquestion?uid={{userId}}" hover-class="navigator-hover">
+   <view class='my_question'>
+    <view class='my_question_t'>
+      <text class='recent_time'>最近提问{{userId}}</text>
+      <text class='questions'>{{myquestio.question_detail}}</text>
+    </view>
+    <view class='answer'>
+      <text class='is_back_question'>已回答</text>
+      <text class='is_back'>{{myquestio.answer_detail}}</text>
+    </view>
+  </view> 
+ </navigator>
+</block> 
+  <!--关于其他人的提问列表  -->
+  <view class="rests_question {{is_exists == 1 ? 'center_text':'top_border'}}">其他相关咨询</view>
+  <view class='other_question'>
+     <view class='other_question_t' wx:for="{{other_question}}" wx:key="unique" wx:for-index="index" wx:for-item="item">
+      <navigator url="/pages/listDetail/questionDetail?qid={{item.id}}" hover-class="navigator-hover">
+        <text class='other_recent_time'>匿名用户  {{item.time_diff}}</text>
+        <text class='other_questions'>
+          {{item.question_detail}}
+          </text>
+        <text class='is_like'>{{item.like ? item.like : 0}}人点赞</text>
+      </navigator>
+    </view>
+     <!-- <view class='other_question_t'>
+      <navigator url="/pages/listDetail/questionDetail?id=1" hover-class="navigator-hover">
+        <text class='other_recent_time'>匿名用户 1小时前</text>
+        <text class='other_questions'>
+          你们的24天课程包含那些3斐林试剂代理费解放路家乐福生理龙利发送到了s发爽肤水法式发的爽肤水法式
+          </text>
+        <text class='is_like'>10人点赞</text>
+      </navigator>
+    </view>
+    <view class='other_question_t'>
+      <navigator url="/pages/listDetail/questionDetail?id=1" hover-class="navigator-hover">
+        <text class='other_recent_time'>匿名用户 1小时前</text>
+        <text class='other_questions'>
+          你们的24天课程包含那些3斐林试剂代理费解放路家乐福生理龙利发送到了s发爽肤水法式发的爽肤水法式
+          </text>
+        <text class='is_like'>10人点赞</text>
+      </navigator>
+    </view>
+     <view class='other_question_t'>
+      <navigator url="/pages/listDetail/questionDetail?id=1" hover-class="navigator-hover">
+        <text class='other_recent_time'>匿名用户 1小时前</text>
+        <text class='other_questions'>
+          你们的24天课程包含那些3斐林试剂代理费解放路家乐福生理龙利发送到了s发爽肤水法式发的爽肤水法式
+          </text>
+        <text class='is_like'>10人点赞</text>
+      </navigator>
+    </view>   -->
+      <!-- <view class='other_question_t'>
+      <navigator url="/pages/listDetail/questionDetail?id=1" hover-class="navigator-hover">
+        <text class='other_recent_time'>匿名用户 1小时前</text>
+        <text class='other_questions'>
+          你们的24天课程包含那些3斐林试剂代理费解放路家乐福生理龙利发送到了s发爽肤水法式发的爽肤水法式
+          </text>
+        <text class='is_like'>10人点赞</text>
+      </navigator>
+    </view>    -->
+          <!--点击更多  -->
+     <view class="get_more {{exist_css}}"  bindtap="getMore"> {{get_more_title}} </view> 
+  </view>
+</view>

@@ -1,0 +1,33 @@
+/* pages/question/askquestion.wxss */
+/*开始提问  */
+.askquestion_box{
+     background: #E7E7E7; 
+     display: flex;
+     flex-direction: column;
+}
+.describe{
+  width: 100%;
+}
+.describe textarea{
+    margin: auto;  
+    width: 90%;
+     margin-top: 30rpx; 
+    margin-bottom: 20rpx;
+    background: #fff;
+    border: 5rpx solid #E7E7E7; 
+    border-radius: 30rpx;
+     /* background: #E7E7E7;   */
+    box-shadow:1px 1px 1px 1px #888888;
+}
+.sub_ok{
+  margin: auto;
+}
+.sub_ok button{
+  width: 550rpx;
+  background: rgb(183, 155, 110);
+  border-radius: 15rpx;
+  color: #fff;
+}
+.place-holde{
+  margin-left: 100rpx;
+}

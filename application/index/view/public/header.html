@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{$title}</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="__BS__/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__CSS__/index.css">
+    <script src="__JS__/jquery-3.3.1.min.js"></script>
+    <script src="__BS__/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--导航栏目-->
+<nav class="navbar navbar-default navbar-static-top hidden-sm hidden-xs" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#" id="logo" style="background:url(http://www.florevp.com/themes/florevp_pc/default/images/logo.gif) no-repeat center; background-size:cover;"></a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li {$action == 'index' ? "class='on'":""}><a href="{:url('index/index')}">首页</a></li>
+                <li {$action == 'register' ? "class='on'":""}><a href="{:url('index/register')}">我要报名</a></li>
+                <li {$action == 'toapply' ? "class='on'":""}><a href="{:url('index/toapply')}">上传作品</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

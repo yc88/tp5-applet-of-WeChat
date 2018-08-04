@@ -1,0 +1,41 @@
+/* pages/info/info.wxss */
+.info_box{
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.cl_1 image{
+  width: 100%;
+  height: 170rpx;
+}
+.cl_2{
+  line-height: 60rpx;
+  font-size: 25rpx;
+  color: #808080;
+  margin: 10rpx 20rpx;
+  /* border: 1rpx solid red; */
+}
+.cl_3 image{
+  width: 100%;
+  height: 600rpx
+}
+.cl_4 image{
+  width: 100%;
+  height:600rpx
+}
+.cl_5 image{
+  width: 100%;
+  height: 600rpx
+}
+.cl_6 image{
+  width: 100%;
+  height: 600rpx
+}
+.cl_7 image{
+  width: 100%;
+  height: 600rpx
+}
+.cl_8 image{
+  width: 100%;
+  height: 600rpx
+}

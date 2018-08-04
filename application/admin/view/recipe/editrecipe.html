@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>编辑食谱</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="__CSS__/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="__CSS__/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="__CSS__/animate.min.css" rel="stylesheet">
+    <link href="__CSS__/style.min.css?v=4.1.0" rel="stylesheet">
+    <style type="text/css">
+        .checked_on{
+            background:#1ab394;
+           color: #ffffff;
+        }
+    </style>
+</head>
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>编辑食谱</h5>
+                </div>
+                <div class="ibox-content">
+                    <form class="form-horizontal m-t" id="commentForm" method="post" action="#">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">选择课程：</label>
+                            <div class="input-group col-sm-9 float_css" style="margin-bottom: 10px">
+                                <select name="courser_id" id="courser_id" class="form-control" >
+                                    <option value="">请选择</option>
+                                    {foreach $course as $c}
+                                    <option value="{$c.id}" {$c['id'] == $recipe['recipe_name']['courser_id'] ? 'selected':''}>{$c.courser_name}</option>
+                                    {/foreach}
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group create_courser_name" >
+                            <input type="hidden" name="r_id" value="{$recipe['recipe_name']['id']}">
+                        </div>
+                        <div class="form-group show_table_element">
+                            <h1 style="margin-left: 50%;" ><input class="btn btn-primary son_title" type="button" value="{$recipe['recipe_name']['recipe_name']}" data-id="{$recipe['recipe_name']['id']}" data-cid="{$recipe['recipe_name']['courser_id']}"></h1>
+
+                            {if condition="!$recipe['recipe_name']['is_recipe']"}
+
+                            {foreach $recipe['recipe_name']['son_recipe_name'] as $r}
+                            <table class="table table-condensed" style="border: 1px solid;">
+                                <caption style="border: 1px solid;border-bottom: none;">
+
+                                    {if condition="$r['is_exists_recipe']"}
+                                        <label style="font-size: 18px;margin-left: 10px;">演示操作：</label>
+                                            是：<input type="radio" data-rid="{$r['recipe']['id']}"  value="1" name="is_demo_{$r['recipe']['id']}" {if condition="$r['recipe']['is_demo'] == 1"}checked{else /}{/if}>
+                                            否：<input type="radio" data-rid="{$r['recipe']['id']}"   value="0" name="is_demo_{$r['recipe']['id']}" {if condition="$r['recipe']['is_demo'] == 0"}checked{else /}{/if}>
+                                    {/if}
+ <input class="son_title" style="margin-left:{$r['is_exists_recipe'] ? '30%':'40%'};border:none;font-size: 25px;color: #665959;" type="button" value="{$r['recipe_name']}" data-id="{$r['id']}" data-cid="{$r['courser_id']}">
+     <i class="fa fa-plus" data-rid="{$r['id']}" data-cid="{$r['courser_id']}" style="float: right;margin-right: 10px;margin-top: 11px;font-size: 20px;" title="添加元素"></i>
+                                </caption>
+                                <thead>
+                                <tr>
+                                    <th>配方元素</th>
+                                    <th>学员用量</th>
+                                    <th>老师用量</th>
+                                    <th>回收资源</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                         {if condition="$r['is_exists_recipe']"}
+                                {foreach $r['recipe']['recipe_data'] as $sr}
+                                <tr>
+                                    <td>{$sr.element_name}</td>
+                                    <td><input type="text" value="{$sr.students_use}" style="border: none;width: 80px;text-align: center"><span>({$sr.element_unit_name})</span></td>
+                                    <td><input type="text" value="{$sr.teachers_use}" style="border: none;width: 80px;text-align: center"><span>({$sr.element_unit_name})</span></td>
+                                    <td><input type="text" value="{$sr.is_back_num}" style="border: none;width: 80px;text-align: center"><span>({$sr.element_unit_name})</span></td>
+                                    <td>
+            <i style="margin-left: 7px;font-size: 18px;" class="fa fa-pencil" data-uid="{$sr.element_unit}" data-rid="{$sr.recipe_id}" data-id="{$sr.id}" data-eid="{$sr['element_id']}" title="编辑元素"></i>
+            <i title="删除元素" data-eid="{$sr.id}" class="fa fa-close del_icon_element" style="margin-left: 7px;font-size: 18px;"></i>                                     </td>
+                                </tr>
+                                {/foreach}
+                             {else /}
+                             <tr>
+                                 <td colspan="5" style="text-align: center;font-size: 14px;color: red;">该食谱还没添加具体的食谱元素</td>
+                             </tr>
+                         {/if}
+
+                                </tbody>
+                            </table>
+                            {/foreach}
+                            {else /}
+                            <!-- 只有顶级名称-->
+                            <table class="table table-condensed" style="border: 1px solid;">
+                                <caption style="border: 1px solid;border-bottom: none;">
+                                    <label style="font-size: 18px;margin-left: 10px;">演示操作：</label>
+                                    是：<input data-rid="{$recipe['id']}" type="radio"   value="1" name="is_demo_{$recipe['id']}" {if condition="$recipe['is_demo'] == 1"}checked{else /}{/if}>
+                                    否：<input type="radio" data-rid="{$recipe['id']}"  value="0" name="is_demo_{$recipe['id']}" {if condition="$recipe['is_demo'] == 0"}checked{else /}{/if}>
+                                    <i class="fa fa-plus" data-rid="{$recipe['recipe_name']['id']}" data-cid="{$recipe['course_id']}" style="float: right;margin-right: 10px;margin-top: 11px;font-size: 20px;" title="添加元素"></i>
+                                </caption>
+                                <thead>
+                                <tr>
+                                    <th>配方元素</th>
+                                    <th>学员用量</th>
+                                    <th>老师用量</th>
+                                    <th>回收资源</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {foreach $recipe['recipe_name']['element'] as $sr}
+                                <tr>
+                                    <td>{$sr.element_name}</td>
+                                    <td><input type="text" value="{$sr.students_use}" style="border: none;width: 80px;text-align: center"><span>({$sr.element_unit_name})</span></td>
+                                    <td><input type="text" value="{$sr.teachers_use}" style="border: none;width: 80px;text-align: center"><span>({$sr.element_unit_name})</span></td>
+                                    <td><input type="text" value="{$sr.is_back_num}" style="border: none;width: 80px;text-align: center"><span>({$sr.element_unit_name})</span></td>
+                                    <td>
+                                        <i style="margin-left: 7px;font-size: 18px;" class="fa fa-pencil" data-uid="{$sr.element_unit}" data-rid="{$sr.recipe_id}" data-id="{$sr.id}" data-eid="{$sr['element_id']}" title="编辑元素"></i>
+                                        <i title="删除元素" data-eid="{$sr.id}" class="fa fa-close del_icon_element" style="margin-left: 7px;font-size: 18px;"></i>                                     </td>
+                                </tr>
+                                {/foreach}
+                                </tbody>
+                            </table>
+                            {/if}
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 col-sm-offset-6">
+                                <input type="button" value="返回" class="btn btn-danger"onclick="javascript :history.back(-1);"/>
+                                <button class="btn btn-primary" type="submit">提交</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="__JS__/jquery.min.js?v=2.1.4"></script>
+<script src="__JS__/bootstrap.min.js?v=3.3.6"></script>
+<script src="__JS__/content.min.js?v=1.0.0"></script>
+<script src="__JS__/plugins/validate/jquery.validate.min.js"></script>
+<script src="__JS__/plugins/validate/messages_zh.min.js"></script>
+<script src="__JS__/plugins/layer/layer.min.js"></script>
+<script src="__JS__/jquery.form.js"></script>
+
+<script type="text/javascript">
+
+    var index = '';
+    function showStart(){
+        index = layer.load(0, {shade: false});
+        return true;
+    }
+
+    function showSuccess(res){
+        layer.ready(function(){
+            layer.close(index);
+            if(1 == res.status){
+                layer.msg('编辑成功',{title: '友情提示', icon: 1, closeBtn: 0},function(){
+                    window.location.href = res.msg;
+                });
+            }else{
+                layer.msg(res.msg, {icon: 5});
+                location.replace(location.href);
+            }
+        });
+    }
+
+    $(document).ready(function(){
+        // 编辑角色
+        var options = {
+            beforeSubmit:showStart,
+            success:showSuccess
+        };
+
+        $('#commentForm').submit(function(){
+            $(this).ajaxSubmit(options);
+            return false;
+        });
+    });
+
+    // 表单验证
+    $.validator.setDefaults({
+        highlight: function(e) {
+            $(e).closest(".form-group").removeClass("has-success").addClass("has-error")
+        },
+        success: function(e) {
+            e.closest(".form-group").removeClass("has-error").addClass("has-success")
+        },
+        errorElement: "span",
+        errorPlacement: function(e, r) {
+            e.appendTo(r.is(":radio") || r.is(":checkbox") ? r.parent().parent().parent() : r.parent())
+        },
+        errorClass: "help-block m-b-none",
+        validClass: "help-block m-b-none"
+    });
+</script>
+
+
+<script type="text/javascript">
+    $('.fa-plus').on('click',function(){
+        var $this = $(this),
+                rid = $this.data('rid'),
+                cid = $this.data('cid');
+        var url = '/admin/recipe/addonerecipedetail?id='+rid+'&cid='+cid;
+        layer.config({
+            skin: 'demo-class'
+        });
+        layer.open({
+            type: 2,
+            title: ['添加食谱名称', 'color: #900000;font-size:18px;'],
+            area:  ['1020px','800px'],
+            btn:['确认', '取消'],
+            content: [url], //这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
+            yes: function(index, layero){
+                var form_top = $(window.frames["layui-layer-iframe"+index].document).find("#add_informSms");
+                //按钮【按钮一】的回调
+                $.post("{:url('recipe/addonerecipedetail')}",$(window.frames["layui-layer-iframe"+index].document).find("#add_informSms").serialize(),function(data){
+                    if(data.status == 1){
+                        layer.msg(data.msg,{icon:1},function(){
+                            location.replace(location.href);
+                            layer.close(index);
+                        });
+                    }else{
+                        layer.msg(data.msg,{icon:5});
+                    }
+                })
+            },
+            btn2: function(index, layero){
+                //按钮【按钮二】的回调
+                layer.close(index);
+                //return false 开启该代码可禁止点击该按钮关闭
+            }
+        });
+    })
+
+    /**
+     * 修改是否是演示
+     */
+    $("input[type='radio']").on('click',function(){
+        var rid = $(this).data('rid'),
+                val = $(this).val(),
+                $this = $(this),
+                $name = $this.attr('name');
+        layer.confirm('确认修改此元素成份嘛?', {icon: 3, title:'提示'}, function(index){
+            $.post("{:url('upload/edit_recipe_is_demo')}",{id:rid,val:val},function(data){
+                if(data.status == 1){
+                    layer.msg('修改成功',{icon:1});
+                    layer.close(index);
+                }else{
+                    layer.msg(data.msg,{icon:5});
+                }
+            });
+            layer.close(index);
+        },function(){
+            var val_yuan = val == 1 ? 0:1;
+            $(":radio[name='"+$name+"'][value='"+val+"']").prop("checked", false);
+            $(":radio[name='"+$name+"'][value='"+val_yuan+"']").prop("checked", true);
+            layer.close(index);
+        })
+    });
+    /**
+     * 食谱标题的修改
+     */
+    $('.son_title').on('click',function(){
+        var title = $(this).val(),
+                id = $(this).data('id'),
+            cid = $(this).data('cid'),
+                $this = $(this);
+        layer.open({
+            type: 1
+            ,title: ['编辑食谱名称', 'color: #900000;font-size:18px;']
+            ,offset: 't' //具体配置参考：offset参数项
+            ,content: '<input value="'+title+'" style="padding: 20px 80px;" class="ht"><input type="hidden" value="'+id+'" id="id"><input type="hidden" value="'+cid+'" id="cid">'
+            ,btn: ['确定','取消']
+            ,btnAlign: 'c' //按钮居中
+            ,shade: 0 //不显示遮罩
+            ,yes: function(){
+                var title = $('.ht').val(),
+                        id = $('#id').val(),
+                        cid = $('#cid').val();
+                    if(!title){
+                        layer.msg('食谱名称不能为空',{icon:5});
+                        return false;
+                    }
+                $.post("{:url('recipe/editrecipename')}",{id:id,cid:cid,title:title},function(data){
+                    if(data.status == 1){
+                        $this.val(title);
+                        layer.close(index);
+                    }else{
+                        layer.msg(data.msg,{icon:5});
+                    }
+                })
+                layer.closeAll();
+            }
+        });
+    })
+    /**
+     * 食谱元素用量的修改
+     */
+    $('.fa-pencil').on('click',function(){
+        var $this = $(this),
+            $tr = $this.parent().parent('tr'),
+            $elementHtml = $tr.find('td').eq(0).html(),
+            $students_use=  $tr.find('td').eq(1).find('input').val(),
+                $students_use_unit = $tr.find('td').eq(1).find('span').html(),
+                $teachers_use=  $tr.find('td').eq(2).find('input').val(),
+                $teachers_use_unit = $tr.find('td').eq(2).find('span').html(),
+                $is_back_num=  $tr.find('td').eq(3).find('input').val(),
+                $is_back_num_unit = $tr.find('td').eq(3).find('span').html(),
+                id = $this.data('id'),
+                eid = $this.data('eid'),
+                rid = $this.data('rid'),
+                uid = $this.data('uid');
+        layer.open({
+            type: 1
+            ,title: ['编辑食谱元素', 'color: #900000;font-size:18px;']
+            ,area:  ['600px','150px']
+            ,offset: 't' //具体配置参考：offset参数项
+            ,content:'<input type="hidden" value="'+id+'" id="id">'
+            +'<input type="hidden" value="'+eid+'" id="eid">'
+           +'<input type="hidden" value="'+rid+'" id="rid">'
+            +'<input type="hidden" value="'+uid+'" id="uid">'
+            + '<input style="width: 150px;border: none;font-size: 15px" value="配方元素"  type="button">'
+            + '<input style="width: 150px;border: none;font-size: 15px" value="学员用量"  type="button">'
+            +'<input style="width: 150px;border: none;font-size: 15px" value="老师用量"  type="button">'
+            +'<input style="width: 150px;border: none;font-size: 15px" value="回收资源"  type="button">'
+            +'<input style="width: 150px;font-size: 15px;border-right:none;text-align:center;" disabled value="'+$elementHtml+'">'
+            +'<input style="width: 100px;font-size: 15px;border-right:none;text-align:center;" value="'+$students_use+'" id="students_use">'+'<input style="width: 50px;font-size: 15px;border-left:none;" disabled value="'+$students_use_unit+'">'
+            +'<input style="width: 100px;font-size: 15px;border-right:none;text-align:center;" value="'+$teachers_use+'" id="teachers_use">'+'<input style="width: 50px;font-size: 15px;border-left:none;" disabled value="'+$teachers_use_unit+'">'
+            +'<input style="width: 100px;font-size: 15px;border-right:none;text-align:center;" value="'+$is_back_num+'" id="is_back_num">'+'<input style="width: 50px;font-size: 15px;border-left:none;" disabled value="'+$is_back_num_unit+'">'
+            ,btn: ['确定','取消']
+            ,btnAlign: 'c' //按钮居中
+            ,shade: 0 //不显示遮罩
+            ,success: function(layero) {
+                var btn = layero.find('.layui-layer-btn');
+                     btn.css('text-align', 'center');
+            }
+            ,yes: function(){
+                var id = $('#id').val(),
+                        eid = $('#eid').val(),
+                        rid =  $('#rid').val(),
+                        uid = $("#uid").val(),
+                        $students_use =  $('#students_use').val(),
+                        $teachers_use =  $('#teachers_use').val(),
+                        $is_back_num =  $('#is_back_num').val();
+                if(!$students_use){
+                    layer.msg('学生用量不能为空',{icon:5});
+                    return false;
+                }
+                if(!$teachers_use){
+                    layer.msg('老师用量不能为空',{icon:5});
+                    return false;
+                }
+                $.post("{:url('recipe/editdetailelement')}",{id:id,recipe_id:rid,element_id:eid,element_unit:uid,students_use:$students_use,teachers_use:$teachers_use,is_back_num:$is_back_num},function(data){
+                    if(data.status == 1){
+                        $tr.find('td').eq(1).find('input').val($students_use);
+                        $tr.find('td').eq(2).find('input').val($teachers_use);
+                        $tr.find('td').eq(3).find('input').val($is_back_num);
+                        layer.close(index);
+                    }else{
+                        layer.msg(data.msg,{icon:5});
+                    }
+                })
+                layer.closeAll();
+            }
+        });
+    });
+    /**
+     * 删除成分元素
+     */
+    $('.del_icon_element').on('click',function(){
+        var $this = $(this),
+                eid = $this.data('eid');
+        layer.confirm('确认删除此元素成份嘛?', {icon: 3, title:'提示'}, function(index){
+            $.getJSON("{:url('recipe/deldetailelement')}", {id : eid}, function(res){
+                if(1 == res.status){
+                    $this.parent().parent('tr').remove();
+                    layer.msg('删除成功', {title: '友情提示', icon: 1});
+                }else{
+                    layer.msg(res.msg, {title: '友情提示', icon: 2});
+                }
+            });
+            layer.close(index);
+        })
+    })
+
+
+</script>
+</body>
+</html>

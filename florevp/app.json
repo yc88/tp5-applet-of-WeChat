@@ -1,0 +1,48 @@
+{
+  "pages": [    
+    "pages/index/index",
+    "pages/question/question",
+    "pages/user/user",
+    "pages/buycourse/buycourse",
+   "pages/courseDetail/courseDetail",
+    "pages/info/info",
+        "pages/listDetail/myquestion",
+    "pages/question/askquestion",
+    "pages/listDetail/mycourse",
+     "pages/listDetail/questionDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#BA9F6E",
+    "navigationBarTitleText": "弗洛",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh ":true
+  },
+  "tabBar": {
+    "color": "#858585",
+    "selectedColor": "#008842",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/2x/course2x.png",
+        "selectedIconPath": "images/2x/course22x.png",
+        "text": "课程"
+      },
+      {
+        "pagePath": "pages/question/question",
+        "iconPath": "images/2x/question2x.png",
+        "selectedIconPath": "images/2x/question22x.png",
+        "text": "问答"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "images/2x/my2x.png",
+        "selectedIconPath": "images/2x/my22x.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

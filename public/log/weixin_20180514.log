@@ -1,0 +1,210 @@
+进来了，验证签名成功
+2018-05-14 10:31:00=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"X6h7uHGLM7j2OTM5fafLnypjtPb7yOC6","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175134645A525154","result_code":"SUCCESS","return_code":"SUCCESS","sign":"22D3F73FFF9670E9042723081AE2ED54","time_end":"20180514103059","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000139201805149438652989"}
+2018-05-14 10:31:00=>null
+进来了，验证签名成功
+2018-05-14 10:31:15=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"X6h7uHGLM7j2OTM5fafLnypjtPb7yOC6","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175134645A525154","result_code":"SUCCESS","return_code":"SUCCESS","sign":"22D3F73FFF9670E9042723081AE2ED54","time_end":"20180514103059","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000139201805149438652989"}
+2018-05-14 10:31:15=>null
+进来了，验证签名成功
+2018-05-14 10:33:03=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"q5tJXPqGRt34RMrvY7qB4Gxrm0vC8UgV","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175134771A509856","result_code":"SUCCESS","return_code":"SUCCESS","sign":"00D9DD294A9EC9938A3DBD6754F65256","time_end":"20180514103302","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000153201805149494751991"}
+2018-05-14 10:33:03=>null
+进来了，验证签名成功
+2018-05-14 10:33:14=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"q5tJXPqGRt34RMrvY7qB4Gxrm0vC8UgV","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175134771A509856","result_code":"SUCCESS","return_code":"SUCCESS","sign":"00D9DD294A9EC9938A3DBD6754F65256","time_end":"20180514103302","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000153201805149494751991"}
+2018-05-14 10:33:14=>null
+进来了，验证签名成功
+2018-05-14 10:36:10=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"hm18OsNRfYxQ2uDJibHNEYGLi9sODynr","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175134954A575199","result_code":"SUCCESS","return_code":"SUCCESS","sign":"DA5E2B5664CA946A704C8A3D0BDC45DD","time_end":"20180514103609","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000148201805149499250539"}
+2018-05-14 10:36:10=>null
+进来了，验证签名成功
+2018-05-14 10:36:28=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"hm18OsNRfYxQ2uDJibHNEYGLi9sODynr","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175134954A575199","result_code":"SUCCESS","return_code":"SUCCESS","sign":"DA5E2B5664CA946A704C8A3D0BDC45DD","time_end":"20180514103609","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000148201805149499250539"}
+2018-05-14 10:36:28=>null
+进来了，验证签名成功
+2018-05-14 10:37:45=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"u9piXSx3gYeDql4mZfdXXJg68eIyWwCX","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175135051A971015","result_code":"SUCCESS","return_code":"SUCCESS","sign":"9C33679A6B29F30763B8E02E3AD9315B","time_end":"20180514103744","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000156201805149524529018"}
+2018-05-14 10:37:45=>null
+进来了，验证签名成功
+2018-05-14 10:37:56=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"u9piXSx3gYeDql4mZfdXXJg68eIyWwCX","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175135051A971015","result_code":"SUCCESS","return_code":"SUCCESS","sign":"9C33679A6B29F30763B8E02E3AD9315B","time_end":"20180514103744","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000156201805149524529018"}
+2018-05-14 10:37:56=>null
+进来了，验证签名成功
+2018-05-14 10:40:53=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"FxBZ7IkQgeIvZv2tAULjmcoRMMFB6Lpi","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175135244A984954","result_code":"SUCCESS","return_code":"SUCCESS","sign":"E261827712F37C9A4E868EBFDBB37BC4","time_end":"20180514104053","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000147201805149284604912"}
+2018-05-14 10:40:53=>null
+进来了，验证签名成功
+2018-05-14 10:41:06=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"FxBZ7IkQgeIvZv2tAULjmcoRMMFB6Lpi","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175135244A984954","result_code":"SUCCESS","return_code":"SUCCESS","sign":"E261827712F37C9A4E868EBFDBB37BC4","time_end":"20180514104053","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000147201805149284604912"}
+2018-05-14 10:41:06=>null
+进来了，验证签名成功
+2018-05-14 10:43:13=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"V6MTDEVdFwVj7utZkJpFsetDdT3DKxzM","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175135378A491005","result_code":"SUCCESS","return_code":"SUCCESS","sign":"2475BB7562D9FF6543ED09636163C952","time_end":"20180514104313","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000144201805149477152183"}
+2018-05-14 10:43:13=>null
+进来了，验证签名成功
+2018-05-14 10:43:24=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"V6MTDEVdFwVj7utZkJpFsetDdT3DKxzM","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175135378A491005","result_code":"SUCCESS","return_code":"SUCCESS","sign":"2475BB7562D9FF6543ED09636163C952","time_end":"20180514104313","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000144201805149477152183"}
+2018-05-14 10:43:24=>null
+进来了，验证签名成功
+2018-05-14 10:45:13=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"FHNuVieuXwbDYzWgLtJEb5P5hwbiYR67","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175135501A999710","result_code":"SUCCESS","return_code":"SUCCESS","sign":"534E7B96753517CDD4C7660C7E80B0A4","time_end":"20180514104512","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000142201805148898389321"}
+2018-05-14 10:45:13=>null
+进来了，验证签名成功
+2018-05-14 10:45:24=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"FHNuVieuXwbDYzWgLtJEb5P5hwbiYR67","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175135501A999710","result_code":"SUCCESS","return_code":"SUCCESS","sign":"534E7B96753517CDD4C7660C7E80B0A4","time_end":"20180514104512","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000142201805148898389321"}
+2018-05-14 10:45:24=>null
+进来了，验证签名成功
+2018-05-14 10:47:43=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"VhKDlT62Je04JHssIRXF3S1C8xkCcnzA","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175135653A529710","result_code":"SUCCESS","return_code":"SUCCESS","sign":"71C347179C73203B9A3E0EB080253742","time_end":"20180514104743","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000158201805149259204836"}
+2018-05-14 10:47:43=>null
+进来了，验证签名成功
+2018-05-14 10:47:55=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"VhKDlT62Je04JHssIRXF3S1C8xkCcnzA","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175135653A529710","result_code":"SUCCESS","return_code":"SUCCESS","sign":"71C347179C73203B9A3E0EB080253742","time_end":"20180514104743","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000158201805149259204836"}
+2018-05-14 10:47:55=>null
+进来了，验证签名成功
+2018-05-14 10:49:16=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"YKv1u7yOClrySv7LF6fXdwotEqplgcGB","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175135745A485051","result_code":"SUCCESS","return_code":"SUCCESS","sign":"A0AF989ABBC93FE0A6D99B40199BEA3B","time_end":"20180514104916","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000145201805149381717606"}
+2018-05-14 10:49:16=>null
+进来了，验证签名成功
+2018-05-14 10:49:31=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"YKv1u7yOClrySv7LF6fXdwotEqplgcGB","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175135745A485051","result_code":"SUCCESS","return_code":"SUCCESS","sign":"A0AF989ABBC93FE0A6D99B40199BEA3B","time_end":"20180514104916","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000145201805149381717606"}
+2018-05-14 10:49:31=>null
+进来了，验证签名成功
+2018-05-14 10:49:59=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"jfhRbPc1RrlZzbiZNklrIigh17aILlbp","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175135789A995010","result_code":"SUCCESS","return_code":"SUCCESS","sign":"A4B8ED378F5FC42E1207A199FB9EFA4E","time_end":"20180514104958","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000144201805149201311785"}
+2018-05-14 10:49:59=>null
+进来了，验证签名成功
+2018-05-14 10:50:11=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"jfhRbPc1RrlZzbiZNklrIigh17aILlbp","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175135789A995010","result_code":"SUCCESS","return_code":"SUCCESS","sign":"A4B8ED378F5FC42E1207A199FB9EFA4E","time_end":"20180514104958","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000144201805149201311785"}
+2018-05-14 10:50:11=>null
+进来了，验证签名成功
+2018-05-14 10:52:27=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"Cphh8V7DlK2qUnZevw8tXPL9t21LAwxw","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175135938A495656","result_code":"SUCCESS","return_code":"SUCCESS","sign":"F16D408160910CA595E91656E55D9A5C","time_end":"20180514105226","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000142201805149361239825"}
+2018-05-14 10:52:27=>null
+进来了，验证签名成功
+2018-05-14 10:52:43=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"Cphh8V7DlK2qUnZevw8tXPL9t21LAwxw","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175135938A495656","result_code":"SUCCESS","return_code":"SUCCESS","sign":"F16D408160910CA595E91656E55D9A5C","time_end":"20180514105226","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000142201805149361239825"}
+2018-05-14 10:52:43=>null
+进来了，验证签名成功
+2018-05-14 10:54:08=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"xjcaD0aZR897MYklsnkMK6nEtzxTaLJv","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175136039A544850","result_code":"SUCCESS","return_code":"SUCCESS","sign":"5CE9ABE2F404AB374522864085ADC20E","time_end":"20180514105408","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000142201805149576246175"}
+2018-05-14 10:54:08=>null
+进来了，验证签名成功
+2018-05-14 10:54:19=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"xjcaD0aZR897MYklsnkMK6nEtzxTaLJv","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175136039A544850","result_code":"SUCCESS","return_code":"SUCCESS","sign":"5CE9ABE2F404AB374522864085ADC20E","time_end":"20180514105408","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000142201805149576246175"}
+2018-05-14 10:54:19=>null
+进来了，验证签名成功
+2018-05-14 10:56:44=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"HOHlib9P7mCoPQ0hFkdBY2GiN04IYgf5","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175136189A999910","result_code":"SUCCESS","return_code":"SUCCESS","sign":"5EBEF1823C481EAB585B9E6E492E3C09","time_end":"20180514105643","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000158201805148878869912"}
+2018-05-14 10:56:44=>null
+进来了，验证签名成功
+2018-05-14 10:57:00=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"HOHlib9P7mCoPQ0hFkdBY2GiN04IYgf5","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175136189A999910","result_code":"SUCCESS","return_code":"SUCCESS","sign":"5EBEF1823C481EAB585B9E6E492E3C09","time_end":"20180514105643","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000158201805148878869912"}
+2018-05-14 10:57:00=>null
+进来了，验证签名成功
+2018-05-14 10:59:04=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"zyvmMa1Qy9bXppTMDKRwqiMjBKFPC8ZQ","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175136333A995451","result_code":"SUCCESS","return_code":"SUCCESS","sign":"3076230AA0A068BD22ACC2ECDA35E3CA","time_end":"20180514105904","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000157201805149435194253"}
+2018-05-14 10:59:04=>null
+进来了，验证签名成功
+2018-05-14 10:59:15=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"zyvmMa1Qy9bXppTMDKRwqiMjBKFPC8ZQ","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175136333A995451","result_code":"SUCCESS","return_code":"SUCCESS","sign":"3076230AA0A068BD22ACC2ECDA35E3CA","time_end":"20180514105904","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000157201805149435194253"}
+2018-05-14 10:59:15=>null
+进来了，验证签名成功
+2018-05-14 11:04:10=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"LgbENKAJVmT8jQRN1wmkiwCHrlhrTP36","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175136639A101100","result_code":"SUCCESS","return_code":"SUCCESS","sign":"71EF7279F5CC278C9F376F2ABF6E0264","time_end":"20180514110409","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000141201805149449032764"}
+2018-05-14 11:04:10=>null
+进来了，验证签名成功
+2018-05-14 11:04:28=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"LgbENKAJVmT8jQRN1wmkiwCHrlhrTP36","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175136639A101100","result_code":"SUCCESS","return_code":"SUCCESS","sign":"71EF7279F5CC278C9F376F2ABF6E0264","time_end":"20180514110409","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000141201805149449032764"}
+2018-05-14 11:04:28=>null
+进来了，验证签名成功
+2018-05-14 11:05:19=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"x0xFUepkXbVHT7E6zghqM9KvBieZq26v","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175136709A525450","result_code":"SUCCESS","return_code":"SUCCESS","sign":"4CA4CFF163D0A1D544C77E3385F88E29","time_end":"20180514110518","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000144201805149517876548"}
+2018-05-14 11:05:19=>null
+进来了，验证签名成功
+2018-05-14 11:05:34=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"x0xFUepkXbVHT7E6zghqM9KvBieZq26v","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175136709A525450","result_code":"SUCCESS","return_code":"SUCCESS","sign":"4CA4CFF163D0A1D544C77E3385F88E29","time_end":"20180514110518","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000144201805149517876548"}
+2018-05-14 11:05:34=>null
+进来了，验证签名成功
+2018-05-14 11:06:21=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"bxLlpxNCZs1FwZNh8TEC5RVzaEyGbtc6","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175136772A515657","result_code":"SUCCESS","return_code":"SUCCESS","sign":"2E591B7DE8ED54194C238611D8CAD6BE","time_end":"20180514110621","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000147201805149424314980"}
+2018-05-14 11:06:21=>null
+进来了，验证签名成功
+2018-05-14 11:06:34=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"bxLlpxNCZs1FwZNh8TEC5RVzaEyGbtc6","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175136772A515657","result_code":"SUCCESS","return_code":"SUCCESS","sign":"2E591B7DE8ED54194C238611D8CAD6BE","time_end":"20180514110621","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000147201805149424314980"}
+2018-05-14 11:06:34=>null
+进来了，验证签名成功
+2018-05-14 11:07:53=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"uV0mMM7SLuuq46aELXBwTJqKQdBogzGY","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175136863A101549","result_code":"SUCCESS","return_code":"SUCCESS","sign":"95F498D71064C96737B6250A7C688660","time_end":"20180514110752","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000150201805149497464712"}
+2018-05-14 11:07:53=>null
+进来了，验证签名成功
+2018-05-14 11:08:03=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"uV0mMM7SLuuq46aELXBwTJqKQdBogzGY","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175136863A101549","result_code":"SUCCESS","return_code":"SUCCESS","sign":"95F498D71064C96737B6250A7C688660","time_end":"20180514110752","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000150201805149497464712"}
+2018-05-14 11:08:03=>null
+进来了，验证签名成功
+2018-05-14 11:09:24=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"4mSYHpqyk8FVhwEcyYLlb80cThQtEyrk","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175136952A559898","result_code":"SUCCESS","return_code":"SUCCESS","sign":"7B637508D05746A69FE193BE46F4BC87","time_end":"20180514110923","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000148201805149438193687"}
+2018-05-14 11:09:24=>null
+进来了，验证签名成功
+2018-05-14 11:09:39=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"4mSYHpqyk8FVhwEcyYLlb80cThQtEyrk","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175136952A559898","result_code":"SUCCESS","return_code":"SUCCESS","sign":"7B637508D05746A69FE193BE46F4BC87","time_end":"20180514110923","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000148201805149438193687"}
+2018-05-14 11:09:39=>null
+进来了，验证签名成功
+2018-05-14 11:10:34=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"CdBC4mqfkfR3tOGyRSjOg30pOmaX1R53","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175137025A489757","result_code":"SUCCESS","return_code":"SUCCESS","sign":"25E6B7F785F78C2D42777C21949EC2F8","time_end":"20180514111033","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000144201805149487839323"}
+2018-05-14 11:10:34=>null
+进来了，验证签名成功
+2018-05-14 11:10:50=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"CdBC4mqfkfR3tOGyRSjOg30pOmaX1R53","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175137025A489757","result_code":"SUCCESS","return_code":"SUCCESS","sign":"25E6B7F785F78C2D42777C21949EC2F8","time_end":"20180514111033","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000144201805149487839323"}
+2018-05-14 11:10:50=>null
+进来了，验证签名成功
+2018-05-14 11:12:43=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"qmZd2IoEhJx82UjOttf9mIXBDl6TboEQ","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175137151A101101","result_code":"SUCCESS","return_code":"SUCCESS","sign":"AB7D0DEF358913398ECF409254D04BE8","time_end":"20180514111242","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000148201805149315037901"}
+2018-05-14 11:12:43=>null
+进来了，验证签名成功
+2018-05-14 11:13:00=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"qmZd2IoEhJx82UjOttf9mIXBDl6TboEQ","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175137151A101101","result_code":"SUCCESS","return_code":"SUCCESS","sign":"AB7D0DEF358913398ECF409254D04BE8","time_end":"20180514111242","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000148201805149315037901"}
+2018-05-14 11:13:00=>null
+进来了，验证签名成功
+2018-05-14 11:14:05=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"2ei9xQjxfaYByBL6HDRhJmlmWfwetqiB","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175137237A525753","result_code":"SUCCESS","return_code":"SUCCESS","sign":"0210B7216A15209016A7848B074757EF","time_end":"20180514111404","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000156201805149429892496"}
+2018-05-14 11:14:05=>null
+进来了，验证签名成功
+2018-05-14 11:14:19=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"2ei9xQjxfaYByBL6HDRhJmlmWfwetqiB","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175137237A525753","result_code":"SUCCESS","return_code":"SUCCESS","sign":"0210B7216A15209016A7848B074757EF","time_end":"20180514111404","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000156201805149429892496"}
+2018-05-14 11:14:19=>null
+进来了，验证签名成功
+2018-05-14 11:15:51=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"qN59rOLB62TSKSG2BlOC40JZWyrQBpmd","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175137340A989856","result_code":"SUCCESS","return_code":"SUCCESS","sign":"194C255E5E834E619336F7AB3BC0BEE1","time_end":"20180514111551","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000139201805149173151538"}
+2018-05-14 11:15:51=>null
+进来了，验证签名成功
+2018-05-14 11:16:05=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"qN59rOLB62TSKSG2BlOC40JZWyrQBpmd","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175137340A989856","result_code":"SUCCESS","return_code":"SUCCESS","sign":"194C255E5E834E619336F7AB3BC0BEE1","time_end":"20180514111551","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000139201805149173151538"}
+2018-05-14 11:16:05=>null
+进来了，验证签名成功
+2018-05-14 11:17:05=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"BjeIhTTVS5USYFfMKJLsVPEHWX26evqv","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175137414A539955","result_code":"SUCCESS","return_code":"SUCCESS","sign":"4C6154F659EE5D96D1DFBFBC15D0EDCF","time_end":"20180514111705","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000145201805149481351708"}
+2018-05-14 11:17:05=>null
+进来了，验证签名成功
+2018-05-14 11:17:17=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"BjeIhTTVS5USYFfMKJLsVPEHWX26evqv","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175137414A539955","result_code":"SUCCESS","return_code":"SUCCESS","sign":"4C6154F659EE5D96D1DFBFBC15D0EDCF","time_end":"20180514111705","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000145201805149481351708"}
+2018-05-14 11:17:17=>null
+进来了，验证签名成功
+2018-05-14 11:19:26=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"hDLNhFUcs20icJZiW4qa7ZfLEp4aidCz","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175137556A519854","result_code":"SUCCESS","return_code":"SUCCESS","sign":"05BA4B1719F409ACB59AA93D99172964","time_end":"20180514111926","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000141201805149532770068"}
+2018-05-14 11:19:26=>null
+进来了，验证签名成功
+2018-05-14 11:19:40=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"hDLNhFUcs20icJZiW4qa7ZfLEp4aidCz","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175137556A519854","result_code":"SUCCESS","return_code":"SUCCESS","sign":"05BA4B1719F409ACB59AA93D99172964","time_end":"20180514111926","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000141201805149532770068"}
+2018-05-14 11:19:40=>null
+进来了，验证签名成功
+2018-05-14 11:22:15=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"eUXWTlgTlacnzoSeAtedNniEEslaPcKZ","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175137724A984810","result_code":"SUCCESS","return_code":"SUCCESS","sign":"E352978F9A711717B04E96709EBD5AD6","time_end":"20180514112214","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000146201805149521169426"}
+2018-05-14 11:22:15=>null
+进来了，验证签名成功
+2018-05-14 11:22:31=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"eUXWTlgTlacnzoSeAtedNniEEslaPcKZ","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175137724A984810","result_code":"SUCCESS","return_code":"SUCCESS","sign":"E352978F9A711717B04E96709EBD5AD6","time_end":"20180514112214","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000146201805149521169426"}
+2018-05-14 11:22:31=>null
+进来了，验证签名成功
+2018-05-14 11:23:57=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"OOMeY6uIPxUFGtBhkmj85TY2K6QlVKEI","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175137829A524957","result_code":"SUCCESS","return_code":"SUCCESS","sign":"10CE41200FFAFAB20A867320BA47A55F","time_end":"20180514112357","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000148201805149176038347"}
+2018-05-14 11:23:57=>null
+进来了，验证签名成功
+2018-05-14 11:24:11=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"OOMeY6uIPxUFGtBhkmj85TY2K6QlVKEI","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175137829A524957","result_code":"SUCCESS","return_code":"SUCCESS","sign":"10CE41200FFAFAB20A867320BA47A55F","time_end":"20180514112357","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000148201805149176038347"}
+2018-05-14 11:24:11=>null
+进来了，验证签名成功
+2018-05-14 11:29:46=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"OBaifGeGLgxAoGLyW34IJx7855eA6NQC","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175138176A102505","result_code":"SUCCESS","return_code":"SUCCESS","sign":"5E7B1A5119044E04758C021752D37D49","time_end":"20180514112946","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000140201805148725000928"}
+2018-05-14 11:29:46=>null
+进来了，验证签名成功
+2018-05-14 11:29:56=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"OBaifGeGLgxAoGLyW34IJx7855eA6NQC","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175138176A102505","result_code":"SUCCESS","return_code":"SUCCESS","sign":"5E7B1A5119044E04758C021752D37D49","time_end":"20180514112946","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000140201805148725000928"}
+2018-05-14 11:29:56=>null
+进来了，验证签名成功
+2018-05-14 11:30:45=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"1tHNLrxosyyzGn2MoXz7coiSyMAy9nJD","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175138237A995153","result_code":"SUCCESS","return_code":"SUCCESS","sign":"8504FCC64B95CC98C99E6E15D5D2CCEC","time_end":"20180514113045","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000158201805149467723694"}
+2018-05-14 11:30:45=>null
+进来了，验证签名成功
+2018-05-14 11:30:59=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"1tHNLrxosyyzGn2MoXz7coiSyMAy9nJD","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175138237A995153","result_code":"SUCCESS","return_code":"SUCCESS","sign":"8504FCC64B95CC98C99E6E15D5D2CCEC","time_end":"20180514113045","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000158201805149467723694"}
+2018-05-14 11:30:59=>null
+进来了，验证签名成功
+2018-05-14 11:33:09=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"hDNEdZQ9iqXoYQcJOJVNWPKvmQJhX4Fw","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175138380A984899","result_code":"SUCCESS","return_code":"SUCCESS","sign":"212C80AA5CEDE2A1F350F9AFAC6D4CAF","time_end":"20180514113308","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000156201805149595827292"}
+2018-05-14 11:33:09=>null
+进来了，验证签名成功
+2018-05-14 11:33:24=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"hDNEdZQ9iqXoYQcJOJVNWPKvmQJhX4Fw","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175138380A984899","result_code":"SUCCESS","return_code":"SUCCESS","sign":"212C80AA5CEDE2A1F350F9AFAC6D4CAF","time_end":"20180514113308","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000156201805149595827292"}
+2018-05-14 11:33:24=>null
+进来了，验证签名成功
+2018-05-14 11:40:46=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"Ha3Qj8HOV8bTh2KoNWuGoWrfXCnHH8VB","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175138836A515556","result_code":"SUCCESS","return_code":"SUCCESS","sign":"12A9C9F035285F5136E204168CF1612C","time_end":"20180514114045","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000148201805149485804482"}
+2018-05-14 11:40:46=>null
+进来了，验证签名成功
+2018-05-14 11:41:00=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"Ha3Qj8HOV8bTh2KoNWuGoWrfXCnHH8VB","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175138836A515556","result_code":"SUCCESS","return_code":"SUCCESS","sign":"12A9C9F035285F5136E204168CF1612C","time_end":"20180514114045","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000148201805149485804482"}
+2018-05-14 11:41:00=>null
+进来了，验证签名成功
+2018-05-14 11:42:55=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"NYxQsMAC2kkSPEsRt2B5ngxG12bN00IJ","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175138965A525556","result_code":"SUCCESS","return_code":"SUCCESS","sign":"505F77DED9911983AABFE1F2993F58E2","time_end":"20180514114254","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000139201805149441316155"}
+2018-05-14 11:42:55=>null
+进来了，验证签名成功
+2018-05-14 11:43:07=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"NYxQsMAC2kkSPEsRt2B5ngxG12bN00IJ","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175138965A525556","result_code":"SUCCESS","return_code":"SUCCESS","sign":"505F77DED9911983AABFE1F2993F58E2","time_end":"20180514114254","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000139201805149441316155"}
+2018-05-14 11:43:07=>null
+进来了，验证签名成功
+2018-05-14 11:46:47=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"iYskfDKVuNlI2naDt2G1m8X9Fq1SXBx2","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175139202A495310","result_code":"SUCCESS","return_code":"SUCCESS","sign":"32D77E2EA3DD0F84BDFAF9B7B5BB193A","time_end":"20180514114647","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000147201805149579247656"}
+2018-05-14 11:46:47=>null
+进来了，验证签名成功
+2018-05-14 11:47:00=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"iYskfDKVuNlI2naDt2G1m8X9Fq1SXBx2","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175139202A495310","result_code":"SUCCESS","return_code":"SUCCESS","sign":"32D77E2EA3DD0F84BDFAF9B7B5BB193A","time_end":"20180514114647","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000147201805149579247656"}
+2018-05-14 11:47:00=>null
+进来了，验证签名成功
+2018-05-14 11:57:55=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"4UitrU4nzTiCaKxaG5COemTUjRRxOrOE","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175139870A100501","result_code":"SUCCESS","return_code":"SUCCESS","sign":"9657EA1888815A2E869C4D2CDA5EB86D","time_end":"20180514115754","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000148201805149463891473"}
+2018-05-14 11:57:55=>null
+进来了，验证签名成功
+2018-05-14 11:58:05=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"4UitrU4nzTiCaKxaG5COemTUjRRxOrOE","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175139870A100501","result_code":"SUCCESS","return_code":"SUCCESS","sign":"9657EA1888815A2E869C4D2CDA5EB86D","time_end":"20180514115754","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000148201805149463891473"}
+2018-05-14 11:58:05=>null
+进来了，验证签名成功
+2018-05-14 13:18:59=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"cQy0AMEjQ3FnAdHXLW77nHFjeOBRJWBR","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175144734A100569","result_code":"SUCCESS","return_code":"SUCCESS","sign":"A045BC1FD1F4480D00F069E2CE6B2F12","time_end":"20180514131859","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000154201805149253133056"}
+2018-05-14 13:18:59=>null
+进来了，验证签名成功
+2018-05-14 13:19:09=>{"appid":"wx394b2cda86f622c5","bank_type":"LQT","cash_fee":"1","fee_type":"CNY","is_subscribe":"N","mch_id":"1503442261","nonce_str":"cQy0AMEjQ3FnAdHXLW77nHFjeOBRJWBR","openid":"ok0WZ5QibUftsYf6XXCHZj2MwEY0","out_trade_no":"WX175144734A100569","result_code":"SUCCESS","return_code":"SUCCESS","sign":"A045BC1FD1F4480D00F069E2CE6B2F12","time_end":"20180514131859","total_fee":"1","trade_type":"JSAPI","transaction_id":"4200000154201805149253133056"}
+2018-05-14 13:19:10=>null

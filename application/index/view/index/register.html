@@ -1,0 +1,18 @@
+<!--我要报名-->
+<div class="container register_container">
+    <div class="row register" >
+        <form action="{:url('index/toapply')}">
+            <div class="col-md-12">
+                <input type="text" class="form-control" value="" name="phone" placeholder="输入手机号">
+            </div>
+            <div class="col-md-12 get_phone_code">
+                <input type="text" class="form-control" value="" name="phone" placeholder="输入验证码">
+                <input type="button" class="btn btn-primary click_code" id="get_phone_captcha" name="code" value="0">
+            </div>
+            <div class="col-md-12 ">
+                <button type="submit" class="btn btn-primary  btn-lg btn-block " style="width: 50%;margin: auto">报&nbsp;&nbsp;名</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="__JS__/reg.js"></script>

@@ -1,0 +1,153 @@
+<link href="__CSS__/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+<link href="__CSS__/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+<link href="__CSS__/animate.min.css" rel="stylesheet">
+<link href="__CSS__/style.min.css?v=4.1.0" rel="stylesheet">
+<link rel="stylesheet" href="__layui__/css/layui.css" media="all">
+<script src="__layui__/layui.js"></script>
+<link rel="stylesheet" href="/static/comboSelect/css/combo.select.css">
+<style type="text/css">
+    .float_css {
+        float: right;
+        margin-left: 5px;
+    }
+</style>
+<form action="" id="add_informSms" method="post" data-ac="888">
+    <input type="hidden" value="{$nameData.id}" name="id">
+    <input type="hidden" value="{$course.id}" name="cid">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox-title">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">所属课程：</label>
+
+                        <div class="input-group col-sm-9 float_css">
+                            <input type="text"
+                                   class="form-control" disabled style="width:250px;" value="{$course.courser_name}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">食谱名称：</label>
+
+                        <div class="input-group col-sm-9 float_css">
+                            <input type="text"
+                                   class="form-control" disabled style="width:250px;" value="{$nameData.recipe_name}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">演示操作：</label>
+                        <div class="input-group col-sm-9 float_css">
+                          是(老师操作)：<input type="radio"  value="1" name="is_demo">
+
+                          否(老师与学员操作)：<input type="radio"  checked value="0" name="is_demo">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">选择元素：</label>
+                        <div class="input-group col-sm-9 float_css">
+                            <select  id="unit_id">
+                                <option value="">选择元素</option>
+                                {foreach $element as $e}
+                                <option value="{$e.id}">{$e.element_name}</option>
+                                {/foreach}
+                            </select>
+                            <div style="clear: both;"></div>
+                        </div>
+                    </div>
+                    <div class="form-group element_son_div">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 具体的元素 用量-->
+        <div class="row">
+            <div class="col-sm-12 ">
+            </div>
+        </div>
+    </div>
+</form>
+<script src="__JS__/jquery.min.js?v=2.1.4"></script>
+<script src="/static/comboSelect/js/jquery.combo.select.js"></script>
+<script src="__JS__/plugins/layer/layer.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('#unit_id').comboSelect();
+    });
+
+    $("#unit_id").on('change', function () {
+        var val_id = $(this).val(),
+            name_html = $("#unit_id").find("option[value =" + val_id + "]").html(),
+                new_name_node = $('.element_son_div').find(".only_name");
+            for(var $i = 0; $i < new_name_node.length; $i++){
+                var new_val = new_name_node.eq($i).val();
+                if(name_html == new_val){
+                    layer.open({
+                        type: 1,
+                        content: '该元素已经存在,请勿重复操作' //这里content是一个普通的String
+                    });
+//                    layer.msg('该元素已经存在',{icon:5,time:1000});
+                    return false;
+                }
+            }
+        $.post("{:url('upload/getrecipeElement')}",{eid:val_id},function(data){
+            if(data.status == 1){
+                $('.element_son_div').prepend(createElementSon(data.data));
+            }else{
+                layer.msg(data.msg,{icon:5});
+            }
+        })
+    });
+
+//    创建元素
+    function createElementSon(data){
+        var html = '';
+            html += '<div class="form-group" style="border: 1px dashed #cccccc">';
+
+            html += '<div class="col-sm-3">';
+            html += '<input type="hidden" name="element_name[]" value="'+data.id+'">';
+            html += '<label class="col-sm-4" style="text-align: center;">食谱元素</label>';
+            html += '<div class="input-group col-sm-2">';
+            html += '<input type="text" class="only_name" disabled style="width:120px;margin-top: 4px;height: 34px;border: none;" value="'+data.element_name+'" placeholder="'+data.element_name+'">';
+            html += '</div>';
+            html += '</div>';
+
+            html += '<div class="col-sm-3">';
+            html += '<label class="col-sm-4" style="text-align: center;">学员消耗</label>';
+            html += '<div class="input-group col-sm-2">';
+            html += '<input type="text" name="students_use[]" class="" style="width:110px;margin-top: 4px;height: 34px;border: none;" value="0" placeholder="学员消耗">';
+            html += '</div><span style="float: right;margin-top: -30px;margin-right: -15px;">('+data.unit_name+')</span>';
+            html += '</div>';
+
+            html += '<div class="col-sm-3">';
+            html += '<label class="col-sm-4" style="text-align: center;">老师消耗</label>';
+            html += '<div class="input-group col-sm-2">';
+            html += '<input type="text" name="teachers_use[]" class="" style="width:110px;margin-top: 4px;height: 34px;border: none;" value="0" placeholder="老师消耗">';
+            html += '</div>';
+            html += '<span style="float: right;margin-top: -30px;margin-right: -15px;">('+data.unit_name+')</span>';
+            html += '</div>';
+
+            html += '<div class="col-sm-3">';
+            html += '<label class="col-sm-4" style="text-align: center;">回收资源</label>';
+            html += '<div class="input-group col-sm-2">';
+            html += '<input type="text" name="is_back_num[]" class=""  style="width:110px;margin-top: 4px;height: 34px;border: none;" value="0" placeholder="回收资源">';
+            html += '</div>';
+            html += '<span style="float: right;margin-top: -30px;margin-right: -15px;">('+data.unit_name+')</span>';
+            html +='</div>';
+
+            html += '<input type="hidden" name="unit_id[]" value="'+data.element_unit+'">';
+            html +='<div style="clear:both;"></div>';
+            html += '<i class="fa fa-close del_icon" style="float: right;margin-top: -60px;font-size: 35px;margin-right: -15px"></i>';
+            html += '</div>';
+        return html;
+    }
+
+    //    删除当前元素
+    $(document).on('click',".del_icon",function () {
+        var $this = $(this);
+        layer.confirm('确定要清除嘛?', {icon: 3, title: '提示'}, function (index) {
+            //do something
+            $this.parent('div').remove();
+            layer.close(index);
+        })
+    });
+</script>

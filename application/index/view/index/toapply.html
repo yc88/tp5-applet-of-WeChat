@@ -1,0 +1,26 @@
+<!--我要报名-->
+<div class="container apply_container">
+    <div class="row apply" >
+        <form action="{:url('index/index')}" class="form-horizontal">
+            <div class="col-md-12 get_production_name">
+                <input type="text" class="form-control" value="" name="production_name" placeholder="输入作品名称">
+            </div>
+            <div class="col-md-12 get_production">
+                <div class="row">
+                    <div class="col-md-12 preview" data-action="{:url('Upload/upload_img')}">
+                        <input name="courser_img" value="" type="hidden" >
+                        <div>
+                            <img style="display: inline;" src="" onerror="this.src='__NoImg__'" class="show" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 ">
+                <button type="submit" class="btn btn-primary  btn-lg btn-block " style="width: 80%;margin: auto">上传作品</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script type="text/javascript">
+    new UploadImages(".form-horizontal");
+</script>

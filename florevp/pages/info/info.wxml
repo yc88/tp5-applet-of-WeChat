@@ -1,0 +1,33 @@
+<!--pages/info/info.wxml-->
+<import mode="widthFix" src="../wxParse/wxParse.wxml"/>
+<view class='info_box' wx:for="{{infoList}}" wx:for-index="idx" wx:key="unique">
+  
+  <view class='cl_{{idx+1}}'  wx:if="{{idx == 0}}">
+    <image mode="widthFix" src='{{hosturl}}{{item.info_img}}'></image>
+  </view> 
+  <view class='cl_{{idx+2}}' wx:if="{{idx == 0}}">
+<text>
+  {{item.info_detail}}
+<!-- 深圳市弗洛高等法式厨艺学校(ECFF)是中国最知名的法式甜点培训学校之一，也是我国第一所获得政府批准，冠名高等法式甜点的具有合法正规教学资质的培训学校，以及政府授权的高技能人才培育基地。
+学校成立于2014年初，至今已有数千名专业甜点从业者与爱好者在此参与不同课程，并找到了创业、生活的新方向。国内最早提出并设立“法点精品”与另外多种“法点专项”系列课程，课程编排科学，风格鲜明，辨识度高，在业内拥有很高的辨识度与知名度，已经成为许多同行参考的标杆。 -->
+</text>
+  </view>
+  <view class='cl_{{idx+2}}' wx:else="{{idx > 0}}">
+    <image mode="widthFix" src='{{hosturl}}{{item.info_img}}'></image>
+  </view>
+  <!-- <view class='cl_4'>
+    <image src='http://wx.florevp.com/about/about3.jpg'></image>
+  </view>
+  <view class='cl_5'>
+    <image src='http://wx.florevp.com/about/about4.jpg'></image>
+  </view>
+  <view class='cl_6'>
+    <image src='http://wx.florevp.com/about/about5.jpg'></image>
+  </view>
+  <view class='cl_7'>
+    <image src='http://wx.florevp.com/about/about6.jpg'></image>
+  </view>
+  <view class='cl_8'>
+    <image src='http://wx.florevp.com/about/about7.jpg'></image>
+  </view> -->
+</view>

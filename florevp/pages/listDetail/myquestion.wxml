@@ -1,0 +1,50 @@
+<!--pages/listDetail/mycourse.wxml-->
+<view class='my_question_list'>
+  <!--没有提问  -->
+  <navigator class='no_question_nav' url='../question/askquestion' hidden='{{question_status}}'>
+  <view class='no_question' >
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" >开始提问</button>
+    <text> 您还没有任何提问，点击开始描述您的问题</text>
+  </view>
+  </navigator>
+  <!--已经存在提问  -->
+  <view class='exist_question' hidden='{{question_status1}}'>
+    <!--我的问题没有回答 即将回答 -->
+    
+    <view class='now_back_question_box'>
+       <view class="now_back_question {{idx1 == existQuestion.length-1 ? 'no_border':'is_border'}}" wx:for="{{existQuestion}}" wx:for-index="idx1" wx:key="unique">
+        <text class='title_1'>{{item.question_detail}}</text>
+        <view class='view_border'>
+          <text class='time_1'>{{item.question_time}}</text>
+          <text class='status_1'>正在回答中</text>
+        </view>
+      </view> 
+    </view>
+    <!--我的问题已经回答  -->
+  
+    <view class='return_question_box' wx:for="{{returnQuestion}}" wx:for-index="idx1" wx:key="unique">
+      <view class='return_question'>
+        <view class='question_title'>
+          <text class='title_2'>{{item.question_detail}}</text>
+          <view>
+            <text class='time_2'>{{item.question_time}}</text>
+            <text class='status_2'>已回答</text>
+          </view>
+        </view>
+        <view class='return_answer'>
+          <text  class='back_answer1'>
+               {{item.answer_detail}}
+                </text>
+          <text class='title_3'> {{item.answer_time}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!--开始进行提问  -->
+    <navigator url='../question/askquestion'>
+      <view class='begin_question'>
+        <button>开始提问</button>
+      </view>
+    </navigator>
+  </view>
+</view>

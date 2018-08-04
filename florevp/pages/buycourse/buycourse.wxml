@@ -1,0 +1,67 @@
+<!--pages/buycourse/buycourse.wxml-->
+<view class='check_course_box'>
+<form bindsubmit="formSubmit_buy">
+  <input value='{{courseId}}' hidden='true' name="course_id"></input>
+  <input value='{{type_id}}' hidden='true' name="type_id"></input>
+   <input value='{{is_agreement}}' hidden='true' name="is_agreement"></input>
+  <view class="section">
+    <view class='checked_course'>选择的课程</view>
+    <picker class='buy_type1' mode="selector" bindchange="bindPickerChange"  range="{{courseData}}" id="{{courseData[index].id}}" value='{{index}}' range-key="courser_name">
+      <view class="checked_section">
+        <view class='checked_title' >{{courseData[index].courser_name}}</view>
+         <image src='../../images/3x/down1.png'></image> 
+      </view> 
+    </picker>
+  </view>
+  <view class="section">
+    <view class='checked_course'>支付方式</view>
+    <view class="checked_section">
+        <view class='checked_title pay_type'>{{buy_type}}</view>
+      </view>
+      <!--支付方式  -->
+    <!-- <picker class='buy_type1' id='{{checked_index}}' mode="selector" bindchange="bindPickerChangetype"  value="{{type_inde}}" range="{{buy_type}}">
+      <view class="checked_section">
+        <view class='checked_title'>{{buy_type[type_inde]}}</view>
+        <image src='../../images/3x/down1.png'></image>
+      </view>
+    </picker> -->
+  </view>
+  <view class='sms_check'>
+      <view class='real_name'>
+       <input adjust-position="true"   placeholder="你的真实姓名" placeholder-class="center" value='' type='text' id='real_name_input'  bindblur="checked_name"  data-name="real_name" maxlength='6' name="real_name" />
+      </view>
+      <view class='phone'>
+          <input adjust-position="true"  maxlength='11'  placeholder="手机号码" data-name="phone"  name="phone"  type='number' value='' class='phone' bindblur="checked_phone" bindinput="checked_phone1"/>
+          <!--{{yzm}}  -->
+          <button class="btn_yzm {{statusCss}}" data-phone="{{phone}}" catchtap="getYzm" disabled="{{yzmDisabled}}">{{yzm}}{{s_unit}}</button>
+      </view>
+      <view class='code'>
+        <input adjust-position="true" name="code" data-name="code"  placeholder="验证码" type='number' value='' class='code' bindblur="checked_code" />
+      </view>
+</view>
+<!--相关协议  -->
+ <view class='notice'> 
+  <checkbox-group bindchange="checkboxChange">
+    <label class="checkbox">
+      <checkbox value="2" checked="true"/>
+    </label>
+  </checkbox-group>
+  <label bindtap='show_agreement' class='checked_agreement'>查看协议</label>
+   <!-- <image mode='widthFix' src='../../images/notice.png'></image>  -->
+ </view> 
+<view class='notice_img'>
+<image mode='widthFix' src='../../images/notice.png'></image>
+</view>
+<!--咨询 加 支付  -->
+<view class="customer_buy">
+    <button open-type="contact" plain='' size="mini" bindcontact="Handler" class='but_question_1' hover-start-time="1">
+    <image src='../../images/3x/course_cs@3x.png'></image>
+     <view>咨询客服</view>
+      </button>
+<!-- {{form_status}} -->
+    <button  size="mini" hover-start-time="1"  class='but_question_buy  {{form_status_css}} ' formType="{{form_status}}">
+      ￥{{money}}</button>
+  </view>
+</form>
+<view style="{{isIpx ? 'height: 122rpx;':'height: 170rpx;'}}"></view>
+</view>

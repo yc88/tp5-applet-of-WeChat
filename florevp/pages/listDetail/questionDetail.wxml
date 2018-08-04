@@ -1,0 +1,27 @@
+<!--pages/listDetail/questionDetail.wxml-->
+<view class='question_detail_box'>
+  <view class='view_1'>
+    <view class='title_1'>
+      <text class='title_1_1'>匿名用户</text>
+      <text class='title_1_2'>{{questionDetail.question_detail}}</text>
+      <text class='title_1_3'>{{questionDetail.question_time}}</text>
+    </view>
+    <view class='content_1'>
+      <view class='content_1_1'>{{questionDetail.answer_detail}}</view>
+      <view class='content_1_4'>
+        <text class='content_1_2'>{{questionDetail.answer_time}}</text>
+        <view class='content_1_3'>
+      <image wx:if="{{questionDetail.my_is_like != 1}}" src='../../images/2x/like2x.png' style='width:50rpx;height:50rpx;' bindtap='likeQuestion' data-qid="{{questionDetail.id}}"></image>
+<image wx:else src='../../images/2x/like22x.png' style='width:50rpx;height:50rpx;' ></image>
+      <text >{{questionDetail.like ? questionDetail.like : 0 }}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 开始提问 -->
+  <navigator url='../question/askquestion' class='view_2'>
+    <view>
+      <button>开始提问</button>
+    </view>
+  </navigator>
+</view>

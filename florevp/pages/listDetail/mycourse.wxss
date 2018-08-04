@@ -1,0 +1,53 @@
+/* pages/listDetail/mycourse.wxss */
+.my_course_box{
+    background: #E7E7E7;  
+  /* border:1rpx solid red; */
+}
+.course_list{
+  background: #fff;
+  padding-left: 35rpx;
+  border-bottom:25rpx solid #E7E7E7; 
+  /* border: 1rpx solid red; */
+}
+.v_1{
+ color: rgb(183, 155, 110);
+ font-size: 40rpx;
+ margin: 10rpx 0rpx;
+}
+.v_2{
+ color: rgb(149, 149, 149);
+ font-size: 30rpx;
+ margin: 10rpx 0rpx;
+}
+.footer_view{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.v_3{
+  font-size: 35rpx;
+}
+/*支付尾款说明  */
+.residue_money .pay_residual_money{
+   color:  rgb(183, 155, 110);
+  margin-left: 70rpx;
+  margin-bottom: 20rpx;
+  font-size: 35rpx;
+}
+.residue_money button{
+  background:  rgb(183, 155, 110);
+  margin-left: 70rpx;
+  margin-bottom: 20rpx;
+  font-size: 40rpx;
+}
+
+/*新用户没有课程的情况下  */
+.no_course{
+  font-size: 40rpx;
+  color:rgb(183, 155, 110);
+  text-align: center;
+}
+.no_course_img{
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,41 @@
+<!--pages/user/user.wxml-->
+<view class='user_box'>
+  <!--个人头像  -->
+  <view class='user_img'>
+    <view hidden='{{user_radio != 1}}'>
+      <button  open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='user_info'></button>
+       <!-- <image class='user_info_img' src='https://wx.florevp.com/160.png'></image>  -->
+    </view>
+     <view hidden='{{user_radio != 2}}'>
+      <image class="userinfo-avatar fl_l" src="{{userInfo.user_photo}}" background-size="cover"></image>
+      <text class="fl_l">{{userInfo.user_name ? userInfo.user_name : nickName}}</text>
+    </view> 
+    <!--{{userInfo.user_name ? userInfo.user_name : nickName}}  -->
+  </view> 
+  <view class='column_box'>
+    <navigator url="{{item.url}}{{userInfo.id}}" wx:for="{{userList}}" wx:key="unique" wx:for-index="idx">
+      <view class="my_questions">
+        <image mode="aspectFit" src='{{item.img1}}' class='left_img'></image>
+        <span class="question_1">{{item.name}}</span>
+        <image mode="aspectFit" class='span_gt' src='{{item.img2}}'></image>
+      </view>
+    </navigator>
+  </view>
+  <view class="my_questions_ke">
+    <button open-type="contact" bindcontact="Handler" hover-start-time="1">
+      <image mode="aspectFit" src='../../images/3x/3x4.png' class='left_img_1'></image>
+      <text>咨询客服</text>
+      <image mode="aspectFit" class='span_gt1' src='../../images/x_right.png'></image>
+    </button>
+  </view>
+  <!--底部咨询电话  -->
+  <view class='other_column' style="{{isIpx ? 'height: 500rpx;': 'height: 300rpx;'}}">
+    <view class='consult_phone' style="{{isIpx ? 'height: 500rpx;': 'height: 300rpx;'}}">
+      <view class='phone_span'>咨询客服电话</view>
+      <button bindtap='goPhone' plain="1" class='phone_1' data-phone='0755-82529570'>
+        <text class='text_phone'>0755-82529570</text> </button>
+      <button bindtap='goPhone' plain="1" class='phone_2' data-phone='18124113160'>
+        <text class='text_phone'>18124113160</text> </button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,145 @@
+/* pages/listDetail/mycourse.wxss */
+/*没有进行提问页面  */
+.my_question_list{
+  /* border: 1rpx solid red; */
+  display: flex;
+  flex-direction: column;
+   /* background: #E7E7E7;   */
+}
+.no_question_nav{
+   /* background: #E7E7E7;  */
+   margin-top: 50%;
+  text-align: center;
+  /* border: 1rpx solid red; */
+}
+.no_question_nav .no_question{
+   /* background: #E7E7E7;  */
+  text-align: center;
+}
+.no_question_nav .no_question button{
+  background: rgb(183, 155, 110);
+  font-size: 45rpx;
+  color: rgb(255, 255, 255);
+  width: 70%;
+  border-radius: 25rpx;
+}
+.no_question_nav .no_question text{
+  font-size: 20rpx;
+  width: 70%;
+  color: rgb(149, 149, 149);
+  margin-top: 40rpx;
+}
+
+/*提问之后的页面  */
+.exist_question{
+    background: #E7E7E7;
+    display: flex;
+    flex-direction: column;
+}
+/*还没有回复的问题  */
+.now_back_question_box{
+  border-bottom: 35rpx solid #E7E7E7;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30rpx;
+  /* border: 1rpx solid red; */
+}
+.now_back_question_box .now_back_question{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rpx;
+}
+.is_border{
+    border-bottom: 2rpx solid #E7E7E7;  
+}
+.no_border{
+  border-bottom: none;
+}
+
+.title_1{
+ font-size: 30rpx;
+ margin-top: 15rpx;
+ line-height: 50rpx;
+}
+.now_back_question_box .now_back_question view{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 10rpx;
+  margin-top: 25rpx;
+}
+.time_1{
+  font-size: 25rpx;
+  color: rgb(147, 147, 147);
+}
+.status_1{
+ color: rgb(147, 147, 147);
+ font-size: 30rpx;
+ margin-right: 30rpx;
+}
+
+/*回复问题 已经  */
+.return_question_box{
+  background: #fff;
+  padding-left: 30rpx;
+  margin-bottom: 10rpx;
+  /* border-top: 2rpx solid red; */
+   /* border: 1rpx solid red;  */
+}
+.return_question_box .return_question{
+   display: flex;
+  flex-direction: column;
+  margin-bottom: 5rpx;
+  /* border: 1rpx solid red; */
+}
+.question_title{
+ border-bottom: 5rpx solid #E7E7E7;
+ /* border:2rpx solid red; */
+}
+.title_2{
+ font-size: 30rpx;
+ margin-top: 15rpx;
+}
+.return_question_box .return_question .question_title view{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 10rpx;
+  margin-top: 25rpx;
+}
+.time_2{
+  font-size: 25rpx;
+  color: rgb(147, 147, 147);
+}
+.status_2{
+ color: rgb(147, 147, 147);
+ font-size: 30rpx;
+ margin-right: 30rpx;
+}
+.return_answer{
+  display: flex;
+  flex-direction: column;
+}
+.back_answer1{
+  line-height: 50rpx;
+  font-size: 30rpx;
+}
+.return_answer .title_3{
+  font-size: 30rpx;
+  color: rgb(147, 147, 147);
+  margin: 15rpx 0rpx;
+}
+
+/*开始提问  */
+.begin_question{
+    position: fixed; 
+   bottom:0; 
+   width: 100%; 
+   margin-top: 100%;  
+}
+.begin_question button{
+   background: rgb(183, 155, 110);
+  font-size: 45rpx;
+  color: rgb(255, 255, 255);
+}

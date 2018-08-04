@@ -1,0 +1,79 @@
+/* pages/listDetail/questionDetail.wxss */
+/*问题详情 */
+.question_detail_box{
+  background: #E7E7E7;
+  display: flex;
+  flex-direction: column;
+}
+
+.view_1{
+  display: flex;
+  flex-direction: column;
+}
+.title_1{
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding-left: 30rpx;
+   padding-right: 20rpx;
+  border-bottom: 5rpx solid #E7E7E7;
+}
+.title_1_1{
+  margin-top: 25rpx;
+  font-size: 30rpx;
+  color: #949494;
+}
+.title_1_2{
+  font-size: 30rpx;
+  color: #666666;
+  margin: 25rpx 0rpx;
+}
+.title_1_3{
+  font-size: 30rpx;
+  color: #949494;
+  margin-bottom: 20rpx;
+}
+
+
+.content_1{
+  background: #fff;
+  padding-left: 30rpx;
+  padding-right: 20rpx;
+  font-size: 30rpx;
+  color: #656565;
+}
+.content_1_1{
+  margin-top: 30rpx;
+  line-height: 50rpx;
+}
+.content_1_4{
+  margin-top: 35rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+.content_1_3{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 20rpx;
+  /* border: 1rpx solid red; */
+}
+
+/*开始提问  */
+.view_2{
+  margin-top: 120%;
+  margin-bottom: 5rpx;
+  /* border: 1rpx solid red; */
+}
+.view_2 button{
+  background: #B79A6E;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
